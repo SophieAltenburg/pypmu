@@ -2078,7 +2078,7 @@ class DataFrame(CommonFrame):
 
             else:
 
-                if not ((-32767 <= phasor[0] <= 32767) or (-32767 <= phasor[1] <= 32767)):
+                if not ((-32767 <= phasor[0] <= 32767) and (-32767 <= phasor[1] <= 32767)):
                     raise ValueError("Real and imaginary value must be 16-bit signed integers. "
                                      "-32767 <= (Re,Im) <= 32767.")
 
